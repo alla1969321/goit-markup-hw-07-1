@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+
+
+      <!-- header section  -->
+  
+
+    <header class="page-header page-header-mobile">
+      <!-- took off main-nav from div class container   -->
+      <div class="container ">   
+        <nav class="main-nav">
+          <a
+            href="./index.html"
+            target="_self"
+            rel="noopener nofollow noreferrer"
+            class="logo"
+            ><span class="accent">web</span>studio</a>
+          <ul class="site-nav list">
+            <li class="item site-nav-item">
+              <a href="./index.html" class="menu-link link">Studio</a>
+            </li>
+            <li class="item site-nav-item">
+              <a href="./portfolio.html" class="menu-link current link">Portfolio</a>
+            </li>
+            <li class="item site-nav-item">
+              <a href="./contacts.html" class="menu-link link">Contacts</a>
+            </li>
+          </ul>
+
+<div class="contact-container">
+      <address class="contacts">
+          <ul class="contact-info list">
+            <li class="contact-item">
+              <a href="mailto:info@devstudio.com" class="mobile-item link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="tel:+11(000)111-11-11" class="phone-item link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+ </div>
+
+          <!-- mobile modal menu and button css -->
+          
+          <button type="button" class="mobile-menu-open" data-mobile-close>
+          <svg class="mobile-menu-open__icon" width="32" height="22">
+          <use href="./images/icons.svg#hamburger">
+          </use>
+          </svg>
+
+          
+          </button>
+            <div class="mobile-menu" data-modal-block>
+              <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-mobile-open>
+            <svg class="mobile-menu__close-icon">
+            <use href="./images/icons.svg#icon-close-modal">
+            </use>
+            </svg>
+            </button>
+
+                        <div class="mobile-navigation">
+
+                            <ul class="mobile-menu-list list">
+                            <li class="mobile-menu-item">
+                              <a href="./index.html" class="mobile-link-item link">Studio</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                              <a href="./portfolio.html" class="mobile-link-item link mobile-link-item__current">Portfolio</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                              <a href="./contacts.html" class="mobile-link-item link">Contacts</a>
+                            </li>
+                          </ul>
+
+
+                          <div class="mobile-contacts">
+
+                              <ul class="mobile-contact-info list">
+                              <li class="mobile-list">
+                                <a class="mobile-contact-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+
+                              <li class="mobile-list">
+                                <a class="mobile-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                              </ul>
+                        
+                          <div class="mobile-icon-countainer">
+                          <ul class="mobile-icon-list">
+                          <li class="mobile-icon-li list">
+                          <a class="mobile-icons-link" href="#">
+                                <svg class="mobile-icons-team">
+                                    <use href="./images/icons.svg#icon-instagram"></use> 
+                                </svg>
+                           </a>
+                           </li>
+
+                        <li class="mobile-icon-li list">
+                        <a class="mobile-icons-link" href="#">
+                        <svg class="mobile-icons-team">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                          </a>
+                          </li>
+                          <li class="mobile-icon-li list">
+                          <a class="mobile-icons-link" href="#">
+                            <svg class="mobile-icons-team">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                          </a>
+                          </li>
+
+                        <li class="mobile-icon-li list">
+                        <a class="mobile-icons-link" href="https://www.linkedin.com">
+                          <svg class="mobile-icons-team">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>
+                        </li>
+                        </ul>
+                        
+                    </div>
+                    </div>
+            
+      </div>
+      </nav>
+
+
+
+<!-- mobile modal button and header stops here  -->
+ 
+      </div>
+    </header>
+<!-- end of header  -->
+
+
+
+
+
+    <!-- main section starts here  -->
+
+    <main>
+      <section class="section-portfolio">
+        <div class="container">
+          <h1 hidden class="visually-hidden">Portfolio</h1>
+          <ul class="portfolio-buttons list">
+            <li class="portfolio-btn">
+              <button type="button" class="button primary">All</button>
+            </li>
+            <li class="portfolio-btn">
+              <button type="button" class="button primary">Web Site</button>
+            </li>
+            <li class="portfolio-btn">
+              <button type="button" class="button primary">App</button>
+            </li>
+            <li class="portfolio-btn">
+              <button type="button" class="button primary">Design</button>
+            </li>
+            <li class="portfolio-btn">
+              <button type="button" class="button primary">Marketing</button>
+            </li>
+          </ul>
+        
+          <ul class="card-set list section-portfolio-container">
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/banking-app-desktop1158px.jpg 2x"
+                  src="./images/banking-app.jpg"
+                  alt="banking-app interface"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Banking App Interface Concept</h2>
+                  <p class="card-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/cashless-payment-desktop1158px.jpg 2x"
+                  src="./images/Cashless-Payment.jpg"
+                  alt="Cashless Payment"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Cashless Payment</h2>
+                  <p class="card-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/iphone-mac-desktop1158px.jpg 2x"
+                  src="./images/IphoneMac.jpg"
+                  alt="Laptop with smartphone"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Meditation App</h2>
+                  <p class="card-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/taxi-service-desktop1158px.jpg 2x"
+                  src="./images/Taxi-Service.jpg"
+                  alt="car driving weel"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Taxi Service</h2>
+                  <p class="card-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/screen-illustration-desktop1158px.jpg 2x"
+                  src="./images/Screen-Illustration.jpg"
+                  alt="Mobile screen"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Screen Illustrations</h2>
+                  <p class="card-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/online-courses-desktop1158px.jpg 2x"
+                  src="./images/Online-Courses.jpg"
+                  alt="Girl with an Iphone"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Online Courses</h2>
+                  <p class="card-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/instagram-stories-concept-desktop1158px.jpg 2x"
+                  src="./images/Instagram-Storis-Concept.jpg"
+                  alt="Instagram screens of mobile app"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Instagram Stories Concept</h2>
+                  <p class="card-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/organic-food-desktop1158px.jpg 2x"
+                  src="./images/Organic-Food.jpg"
+                  alt="girl with a bag"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Organic Food</h2>
+                  <p class="card-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="portfolio-card link" href="">
+                <div class="card-overlay-wrapper">
+                <img
+                  class="card-img"
+                  srcset="./images/fresh-coffee-desktop1158px.jpg"
+                  src="./images/Fresh-Coffe.jpg"
+                  alt="bartender making a cup of Coffee"
+                  width="360">
+                  <p class="card-overlay card-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Fresh Coffee</h2>
+                  <p class="card-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- section footer is  starts here -->
+
+
+
+    <footer class="section-footer">
+      <div class="container footer-container">
+        <div class="footer-container-one">
+          <a
+            class="logo-down"
+            href="./index.html"
+            target="_self"
+            rel="noopener nofollow noreferrer"
+            ><span class="accent">web</span
+            ><span class="logo-studio">studio</span></a>
+          <p class="footer-description">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+
+        <div class="footer-container-two">
+          <p class="footer-social-text">Social media</p>
+          <ul class="socials-footer list">
+            <li class="socials-item-footer">
+              <a
+                class="socials-link-footer"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram icon"
+              >
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item-footer">
+              <a
+                class="socials-link-footer link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter icon"
+              >
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item-footer">
+              <a
+                class="socials-link-footer link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook icon"
+              >
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item-footer">
+              <a
+                class="socials-link-footer"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin icon"
+              >
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+         <div class="footer-container-three">
+          <p class="footer-form-subscribe">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-label">
+              <input class="footer-field" type="email" name="email" placeholder="E-mail" required="">
+            </label>
+            <button class="footer-form-btn" type="submit">
+              Subscribe
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+
+
+ <script src="./js/mobile.js"></script>
+<script src="./js/modal.js"></script>
+  </body>
+</html>
